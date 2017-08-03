@@ -10,7 +10,8 @@ Git é um sistema de controle de versão, ou seja, um sistema que permite o gere
 Um sistema de controle de versão funciona baseado em Estações de Trabalho e um Repositório. As estações de trabalho são os locais onde cada membro da equipe trabalha, ao passo que o repositório é onde as modificações feitas no projeto são concentradas.
 
 ** O Git se diferencia dos outros Sistemas de controle de versão por dois motivos:**
- *1-Ao contrario de outros Sistemas de Controle de Versão, o Git é do tipo Distribuido:*
+
+ *1-Ao contrario de outros Sistemas de Controle de Versão, o Git é do tipo Distribuido:
 
  *A maioria dos Sistemas de Controle de Versão são do tipo Concentrados. Isso quer dizer que as modificações feitas no projeto são concentradas apenas no repositório e as estações de trabalho só possuem acesso às modificações feitas nelas mesmas. Um Sistema de Controle de Versão Distribuido permite que não só o repositório, mas também as estações de trabalho, tenham acesso a todas as modificações feitas no projeto.*
 
