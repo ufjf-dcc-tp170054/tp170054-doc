@@ -9,20 +9,20 @@ Git é um sistema de controle de versão, ou seja, um sistema que permite o gere
 
 Um sistema de controle de versão funciona baseado em Estações de Trabalho e um Repositório. As estações de trabalho são os locais onde cada membro da equipe trabalha, ao passo que o repositório é onde as modificações feitas no projeto são concentradas.
 
-### O Git se diferencia dos outros Sistemas de controle de versão por dois motivos:
-### 1-Ao contrario de outros Sistemas de Controle de Versão, o Git é do tipo Distribuido:
+** O Git se diferencia dos outros Sistemas de controle de versão por dois motivos:**
+ *1-Ao contrario de outros Sistemas de Controle de Versão, o Git é do tipo Distribuido:*
 
-  A maioria dos Sistemas de Controle de Versão são do tipo Concentrados. Isso quer dizer que as modificações feitas no projeto são concentradas apenas no repositório e as estações de trabalho só possuem acesso às modificações feitas nelas mesmas. Um Sistema de Controle de Versão Distribuido permite que não só o repositório, mas também as estações de trabalho, tenham acesso a todas as modificações feitas no projeto.
+ *A maioria dos Sistemas de Controle de Versão são do tipo Concentrados. Isso quer dizer que as modificações feitas no projeto são concentradas apenas no repositório e as estações de trabalho só possuem acesso às modificações feitas nelas mesmas. Um Sistema de Controle de Versão Distribuido permite que não só o repositório, mas também as estações de trabalho, tenham acesso a todas as modificações feitas no projeto.*
 
-### 2-A forma como se trabalha em um projeto através do Git:
+*2-A forma como se trabalha em um projeto através do Git:*
 
-  O Git possui três estágios, o Working Directory, a Staging Area e o Git Directory.
+  *O Git possui três estágios, o Working Directory, a Staging Area e o Git Directory.
 
-   O Working Directory é o diretório onde se esta trabalhando. Nesse estágio que são feitas as modificações propriamente ditas no projeto.
+   *O Working Directory é o diretório onde se esta trabalhando. Nesse estágio que são feitas as modificações propriamente ditas no projeto.
 
-   A Staging Area é o "local" onde as modificações feitas no Working Directory ficam antes de serem enviadas para o Repositório. É como se fosse uma sala de espera dessas modificações.
+   *A Staging Area é o "local" onde as modificações feitas no Working Directory ficam antes de serem enviadas para o Repositório. É como se fosse uma sala de espera dessas modificações.
 
-   O Git Directory é o destino final do projeto, o repositório.
+   *O Git Directory é o destino final do projeto, o repositório.
 
  Ok, agora tendo em mente o motivo de o Git ser importante e como ele funciona, é necessário saber como utiliza-lo. Para isso, vá ao site
 
@@ -88,18 +88,18 @@ git push -u origin master
 
 ## Resumindo:
 
-git init: Inicia o controle de versão.
+**git init:** Inicia o controle de versão.
 
-git add: Coloca modificação dos arquivos na Staging Area.
+**git add:** Coloca modificação dos arquivos na Staging Area.
 
-git commit: Coloca arquivos na Staging Area no Working Directory.
+**git commit:** Coloca arquivos na Staging Area no Working Directory.
 
-git status: Verifica se existem modificações no Working Directory ou arquivos no Staging Area para serem commitados.
+**git status:** Verifica se existem modificações no Working Directory ou arquivos no Staging Area para serem commitados.
 
-git diff: Mostra, através do terminal, as mudanças feitas nos arquivos do projeto enquanto eles ainda estão no Working Directory.
+**git diff:** Mostra, através do terminal, as mudanças feitas nos arquivos do projeto enquanto eles ainda estão no Working Directory.
 
-git log: Mostra, através do terminal, todos os commites feitos no projeto.
+**git log:** Mostra, através do terminal, todos os commites feitos no projeto.
 
-git log -p: Mostra, através do terminal, todos os arquivos commitados e seus commites do projeto.
+**git log -p:** Mostra, através do terminal, todos os arquivos commitados e seus commites do projeto.
 
-gitk: Mostra, através de uma interface gráfica, as mudanças feitas nos arquivos do projeto.
+**gitk:** Mostra, através de uma interface gráfica, as mudanças feitas nos arquivos do projeto.
