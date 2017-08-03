@@ -5,9 +5,9 @@ O treinamento profissional "Desenvolvimento de aplicativos para dispositivos mó
 
 O projeto teve início no ano de 2016 sob a orientação do professor Stênio Sã e atualmente está sobre a tutela do professor Igor Knop.
 
-##Equipe
+## Equipe
 
-###Coordenação e Tutoria
+### Coordenação e Tutoria
 * Igor Knop
 * Stênio Sã
 
@@ -22,6 +22,6 @@ O projeto teve início no ano de 2016 sob a orientação do professor Stênio S�
 ### Ex-Bolsistas
 
 
-##Material de Apoio
+## Material de Apoio
 * [Tutorial git (local)](git-local.md)
 * [Tutorial git (remoto)](git-remoto.md)
