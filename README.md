@@ -1,20 +1,20 @@
 
 # tp2017-1
 
-Tutorial Git - Treinamento Profissional
+### Tutorial Git - Treinamento Profissional
 
-O que é Git e para que ele serve?
+## O que é Git e para que ele serve?
 
 Git é um sistema de controle de versão, ou seja, um sistema que permite o gerenciamento das modificações feitas em um arquivo ou conjunto de arquivos ao longo do tempo.  Esse tipo de ferramenta permite mais organização, velocidade e fluidez no andamento de projetos em equipe, dado que cada participante do projeto faz sua parte independente de seus colegas.
 
 Um sistema de controle de versão funciona baseado em Estações de Trabalho e um Repositório. As estações de trabalho são os locais onde cada membro da equipe trabalha, ao passo que o repositório é onde as modificações feitas no projeto são concentradas.
 
-O Git se diferencia dos outros Sistemas de controle de versão por dois motivos:
-# 1-Ao contrario de outros Sistemas de Controle de Versão, o Git é do tipo Distribuido:
+### O Git se diferencia dos outros Sistemas de controle de versão por dois motivos:
+### 1-Ao contrario de outros Sistemas de Controle de Versão, o Git é do tipo Distribuido:
 
   A maioria dos Sistemas de Controle de Versão são do tipo Concentrados. Isso quer dizer que as modificações feitas no projeto são concentradas apenas no repositório e as estações de trabalho só possuem acesso às modificações feitas nelas mesmas. Um Sistema de Controle de Versão Distribuido permite que não só o repositório, mas também as estações de trabalho, tenham acesso a todas as modificações feitas no projeto.
 
-# 2-A forma como se trabalha em um projeto através do Git:
+### 2-A forma como se trabalha em um projeto através do Git:
 
   O Git possui três estágios, o Working Directory, a Staging Area e o Git Directory.
 
@@ -31,13 +31,13 @@ O Git se diferencia dos outros Sistemas de controle de versão por dois motivos:
    e clique em "Downloads". Baixe a versão do sistema mais adequada ao seu computador.
 
 
- # Como usar o Git?
+ ## Como usar o Git?
 
 O sistema baixado no site http://git-scm.com permite o uso dessa ferramenta através do terminal. Para iniciar o trabalho, abra o git bash(pode ser através do botão direito do mouse, procurando no seu sistema, etc...). Abrindo o git bash, haverá sempre o nome de usuário @ nome da sua máquina, seguido da localização.
 
- exemplo:
+ #### exemplo:
 
-  fulano@beltrano1cak331 documentos/estudos/git
+ #### fulano@beltrano1cak331 documentos/estudos/git
 
 Para iniciar seu projeto com Git, é necessário primeiro entrar na pasta que você irá trabalhar. Para isso, digite
 
@@ -61,7 +61,7 @@ Se a mudança for interessante, basta digitar "git add nome da pasta modificada"
 
 Já que os arquivos estão na Staging Area, so resta confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta digitar "git commit -m "Escreve uma mensagem qualquer"".
 
- # Quando se deseja saber mais detalhes das modificações nos arquivo do que o git status pode mostrar, existem comando que podem fazer isso:
+ ### Quando se deseja saber mais detalhes das modificações nos arquivo do que o git status pode mostrar, existem comando que podem fazer isso:
 
 O "git diff" mostra, através do terminal, as mudanças que ocorreram no Working Directory. Se as mudanças forem para a Staging Area, então elas não serão mostradas pelo git diff.
 
@@ -78,15 +78,15 @@ Após terminar o projeto, para enviar o projeto para o github.com(site no qual o
 git remote add origin endereço da página no git
 git push -u origin master
 
-exemplo:
+#### exemplo:
 
-git remote add origin h ttps://github.com/Fulano/projeto-.git
-git push -u origin master
-
-
+#### git remote add origin h ttps://github.com/Fulano/projeto-.git
+#### git push -u origin master
 
 
-# Resumindo:
+
+
+## Resumindo:
 
 git init: Inicia o controle de versão.
 
