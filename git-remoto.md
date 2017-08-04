@@ -1,3 +1,6 @@
+## Adicionando um novo remoto
+## Listando remotos
+
 Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar "git log".
 
 Se, além dos commites, deseja-se saber quais foram as modificações exatas nos arquivos que estão no Git Directory, basta digitar "git log -p". Esse comando pode ser encarado como uma mistura do "git diff" com o "git log".
