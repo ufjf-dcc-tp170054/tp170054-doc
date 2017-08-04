@@ -1,6 +1,7 @@
 # Repositórios locais e remotos
-
-# Removendo remotos
+## Adicionando um novo remoto
+## Listando remotos
+## Removendo remotos
 
 Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar "git log".
 
