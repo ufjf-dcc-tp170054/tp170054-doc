@@ -1,20 +1,35 @@
-# Repositórios locais e remotos
+# Repositórios remotos
+
+## O que é um repositório Remoto?
+
+  É chamado de repositório remoto aquele cujo controle de versão esta na internet ou em outras redes. Como exemplo temos o GitHub, site no qual se encontram os repositórios deste TP. Com acesso a vários repositórios remotos, os participantes de um mesmo projeto podem ter um controle de versão pessoal, além do compartilhado com seus colegas de equipe, o que fortalece a independência entre eles no projeto.
+
+
 ## Adicionando um novo remoto
+
+ Para adicionar um novo repositório remoto, basta usar o comando
+"git remote add nomeCurto url"
+
+ *exemplo*:
+  git remote add novorign h ttps://github.com/Fulano/projeto-.git
+
 ## Listando remotos
-## Removendo remotos
+ Para listar seus repositórios remotos, basta digitar os comandos "git remote" ou "git remote -v". O primeiro comando mostra apenas os nomes dos remotos, ao passo que o segundo mostra não só os nomes como também o URL do repositório remoto.
 
-Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar "git log".
+## Renomeando e  Removendo remotos
+Para renomear um repositório remoto, basta usar o comando
+"git remote rename nomeantigo nomenovo"
 
-Se, além dos commites, deseja-se saber quais foram as modificações exatas nos arquivos que estão no Git Directory, basta digitar "git log -p". Esse comando pode ser encarado como uma mistura do "git diff" com o "git log".
+*exemplo*:
+ git remote rename novorign neworigin
 
-Como o "git diff" e o "git log"(juntamente com suas variações) são mostrados pelo terminal, muitas vezes a análise das mudanças nos arquivos através desses comandos torna-se pouco produtiva. Para resolver esse problema, também existe o comando "gitk", que da acesso à interface gráfica do Git. Com essa interface, pode-se analisar todas as mudanças nos arquivos de forma clara e objetiva.
+ Para remover um repositório remoto, basta usar o comando
+ "git remote rm nomeDoRemoto"
+*exemplo*:
+ git remote rm neworigin
 
-Após terminar o projeto, para enviar o projeto para o github.com(site no qual outros membros da sua equipe podem ver suas modificações), basta, na pagina inicial do github.com, clicar em "new repository" e, após nomea-lo, enviar suas modificações através dos comandos
-
-git remote add origin endereço da página no git
-git push -u origin master
-
-#### exemplo:
-
-#### git remote add origin h ttps://github.com/Fulano/projeto-.git
-#### git push -u origin master
+## Usando push em diferentes remotos
+Para usar o push em diferentes remotos, basta digitar
+"git push nomeDoRemoto"
+*exemplo*
+git push neworigin
