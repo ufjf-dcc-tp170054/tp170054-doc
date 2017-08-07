@@ -28,7 +28,7 @@ Um sistema de controle de versão funciona baseado em Estações de Trabalho e u
 
    e clique em "Downloads". Baixe a versão do sistema mais adequada ao seu computador.
 
-##Como usar o Git?
+## Como usar o Git?
 
 O sistema baixado no site http://git-scm.com permite o uso dessa ferramenta através do terminal. Para iniciar o trabalho, abra o git bash(pode ser através do botão direito do mouse, procurando no seu sistema, etc...). Abrindo o git bash, haverá sempre o nome de usuário @ nome da sua máquina, seguido da localização.
 
@@ -41,7 +41,7 @@ cd nomeDaPasta
 
 O git se encaminhará para a referida pasta.
 
-###Criando Repositório Local
+### Criando Repositório Local.
 Através do comando "git init" é criado um repositório na pasta que esta sendo trabalhada para o git, dando inicio ao controle de versão. Essa criação de repositório pode ser confirmada com a pasta .git que aparecerá na localização onde foi digitado "git init".
 
 É interessante notar que, ao lado do "nome de usuário @ nome da sua máquina, seguido da localização" haverá um "(master)"
@@ -51,14 +51,14 @@ Através do comando "git init" é criado um repositório na pasta que esta sendo
 
 Isso indica que o estagio no qual se esta é o mais recente do projeto, e não em versões anteriores ou desatualizadas em relação a modificações feitas no projeto.
 
-###Fazendo modificações no projeto
+### Fazendo modificações no projeto.
 Após o Git init, para verificar se há alguma mudança no projeto que não foi incluida no repositório da sua máquina, digite "git status". Este comando irá mostrar se existem ou não modificações no working directory(mostradas com a cor vermelha) ou na staging area(mostradas com a cor verde).
 
 Se a mudança for interessante e estiver sendo mostrada com a cor vermelha, basta digitar "git add nomeDaPastaModificada", o que fará a mudança feita no arquivo ir para o controle de versão. O git add, em resumo, pega o arquivo que estava no Working Directory e coloca-o na Staging Area.
 
 Quando as modificações dos arquivos estiverem na Staging Area, so restará confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta digitar "git commit -m "Escreve uma mensagem qualquer"".
 
-###Conferindo mais detalhes das modificações do projeto
+### Conferindo mais detalhes das modificações do projeto.
  Além do git status, o usuário do git pode verificar modificações feitas em seus projetos através dos comandos "git diff", "git log", "gitk", entre outros.
 
 O "git diff" mostra, através do terminal, as mudanças que ocorreram no Working Directory. Se as mudanças forem para a Staging Area, então elas não serão mostradas pelo git diff.
