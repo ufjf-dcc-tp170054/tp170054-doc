@@ -2,34 +2,52 @@
 
 ## O que é um repositório Remoto?
 
-  É chamado de repositório remoto aquele cujo controle de versão esta na internet ou em outras redes. Como exemplo temos o GitHub, site no qual se encontram os repositórios deste TP. Com acesso a vários repositórios remotos, os participantes de um mesmo projeto podem ter um controle de versão pessoal, além do compartilhado com seus colegas de equipe, o que fortalece a independência entre eles no projeto.
+É chamado de repositório remoto uma cópia de trabalho que está na internet, na rede ou mesmo em outra pasta. Como exemplo temos os próprios repositórios no GitHub, que inclusive adiciona uma camada extra de controle de acesso ao git.
 
+Com acesso a vários repositórios remotos, as cópias de trabalho podem trocar revisões entre elas. Isso permite aos participantes de um mesmo projeto deixarem seus fluxos de trabalho independentes uns dos outros. Pois cada um pode realizar suas modificações em  suas próprias cópias de trabalho e compartilhar as revisões com colegas de equipe. Isso fortalece a independência entre eles para o avanço do projeto.
 
 ## Adicionando um novo remoto
 
- Para adicionar um novo repositório remoto, basta usar o comando
-"git remote add nomeCurto url"
+Um repositório pode ter uma grande lista de remotos e cada remoto é referenciado por um nome local único. Para adicionar e remover repositórios remotos, basta usar o comando `git remote`.
 
- *exemplo*:
-  git remote add novorign h ttps://github.com/Fulano/projeto-.git
+Para adicionar um novo remoto, deve-se fornecer um nome e a URL do repositório:
+
+```
+git remote add nomeCurto url
+```
+
+Por exemplo,para adicionar um remoto hospedado a uma cópia de trabalho local, utilize o comando:
+
+```
+git remote add origin https://github.com/Fulano/projeto-exemplo.git
+```
 
 ## Listando remotos
- Para listar seus repositórios remotos, basta digitar os comandos "git remote" ou "git remote -v". O primeiro comando mostra apenas os nomes dos remotos, ao passo que o segundo mostra não só os nomes como também o URL do repositório remoto.
+Para listar todos os repositórios remotos na cópia de trabalho local, basta usar `git remote`. Isso mostrará os nomes dos remotos atualmente configurados.
 
-## Renomeando e  Removendo remotos
-Para renomear um repositório remoto, basta usar o comando
-"git remote rename nomeantigo nomenovo"
+Se for utilizado `git remote -v`, será exibido também as URLs ds remotos, tanto para operações de envio (_push_) e recebimento (_pull_) associadas à URL dos repositórios remotos.
 
-*exemplo*:
- git remote rename novorign neworigin
+## Renomeando
+O identificador local de um repositório remoto pode ser alterado pelo comando `git remote rename`. Por exemplo:
 
- Para remover um repositório remoto, basta usar o comando
- "git remote rm nomeDoRemoto"
-*exemplo*:
- git remote rm neworigin
+```
+git remote rename nomeantigo nomenovo
+```
 
-## Usando push em diferentes remotos
-Para usar o push em diferentes remotos, basta digitar
-"git push nomeDoRemoto"
-*exemplo*
+## Removendo remotos
+Para remover uma referência a um repositório remoto, basta usar o comando `git remote rm nomeDoRemoto`. É importante destacar que isso apenas remove a referência do remoto da cópia de trabalho local. Isso não exclui a cópia de trabalho remota.
+
+## Usando diferentes remotos
+É possível tanto obter quanto enviar revisões para cópias de trabalho remotas ao especificar o seu identificador para `git push` e `git pull`.
+
+```
 git push neworigin
+```
+```
+git pull neworigin
+```
+
+# Trabalhando com ramificações remotas
+## Enviar uma ramificação local para um remoto
+## Obter uma ramificação remota para a cópia local
+## Excluir uma ramificação remota
