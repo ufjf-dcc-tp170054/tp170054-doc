@@ -32,9 +32,9 @@ Um sistema de controle de versão funciona baseado em Estações de Trabalho e u
 
 O sistema baixado no site http://git-scm.com permite o uso dessa ferramenta através do terminal. Para iniciar o trabalho, abra o git bash(pode ser através do botão direito do mouse, procurando no seu sistema, etc...). Abrindo o git bash, haverá sempre o nome de usuário @ nome da sua máquina, seguido da localização.
 
- *exemplo:*
- fulano@beltrano1cak331 documentos/estudos/git
-
+ ```
+  fulano@beltrano1cak331 documentos/estudos/git
+```
 Para iniciar seu projeto com Git, é necessário primeiro entrar na pasta que você irá trabalhar. Para isso, digite
 
 cd nomeDaPasta
@@ -42,45 +42,86 @@ cd nomeDaPasta
 O git se encaminhará para a referida pasta.
 
 ### Criando Repositório Local.
-Através do comando "git init" é criado um repositório na pasta que esta sendo trabalhada para o git, dando inicio ao controle de versão. Essa criação de repositório pode ser confirmada com a pasta .git que aparecerá na localização onde foi digitado "git init".
+Através do comando `git init` é criado um repositório na pasta que esta sendo trabalhada para o git, dando inicio ao controle de versão. Essa criação de repositório pode ser confirmada com a pasta .git que aparecerá na localização onde foi digitado "git init".
+
+```
+git init
+
+```
 
 É interessante notar que, ao lado do "nome de usuário @ nome da sua máquina, seguido da localização" haverá um "(master)"
 
-*exemplo:*
+```
   fulano@beltrano1cak331 documentos/estudos/git (master)
-
+```
 Isso indica que o estagio no qual se esta é o mais recente do projeto, e não em versões anteriores ou desatualizadas em relação a modificações feitas no projeto.
 
 ### Fazendo modificações no projeto.
-Após o Git init, para verificar se há alguma mudança no projeto que não foi incluida no repositório da sua máquina, digite "git status". Este comando irá mostrar se existem ou não modificações no working directory(mostradas com a cor vermelha) ou na staging area(mostradas com a cor verde).
+Após o Git init, para verificar se há alguma mudança no projeto que não foi incluida no repositório da sua máquina, digite `git status`. Este comando irá mostrar se existem ou não modificações no working directory(mostradas com a cor vermelha) ou na staging area(mostradas com a cor verde).
 
-Se a mudança for interessante e estiver sendo mostrada com a cor vermelha, basta digitar "git add nomeDaPastaModificada", o que fará a mudança feita no arquivo ir para o controle de versão. O git add, em resumo, pega o arquivo que estava no Working Directory e coloca-o na Staging Area.
+Se a mudança for interessante e estiver sendo mostrada com a cor vermelha, basta usar o comando `git add`, o que fará a mudança feita no arquivo ir para o controle de versão. O `git add`, em resumo, pega o arquivo que estava no Working Directory e coloca-o na Staging Area.
 
-Quando as modificações dos arquivos estiverem na Staging Area, so restará confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta digitar "git commit -m "Escreve uma mensagem qualquer"".
+```
+git add nomeDaPasta
+
+```
+
+Quando as modificações dos arquivos estiverem na Staging Area, so restará confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta usar o comando `git commit -m `.
+
+```
+git commit -m "Alguma modificação foi feita"
+
+```
+
 
 ### Conferindo mais detalhes das modificações do projeto.
- Além do git status, o usuário do git pode verificar modificações feitas em seus projetos através dos comandos "git diff", "git log", "gitk", entre outros.
+ Além do git status, o usuário do git pode verificar modificações feitas em seus projetos através dos comandos `git diff`, `git log`, `gitk`, entre outros.
 
-O "git diff" mostra, através do terminal, as mudanças que ocorreram no Working Directory. Se as mudanças forem para a Staging Area, então elas não serão mostradas pelo git diff.
+O `git diff` mostra, através do terminal, as mudanças que ocorreram no Working Directory. Se as mudanças forem para a Staging Area, então elas não serão mostradas pelo git diff.
 
-Caso seja interessante saber como estão as mudanças na Staging Area, basta digitar "git diff -- staged", mas esse comando não mostra as modificações que estão no Git Directory.
+Caso seja interessante saber como estão as mudanças na Staging Area, basta digitar `git diff -- staged`, mas esse comando não mostra as modificações que estão no Git Directory.
 
-Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar "git log".
+```
+git diff
 
-Se, além dos commites, deseja-se saber quais foram as modificações exatas nos arquivos que estão no Git Directory, basta digitar "git log -p". Esse comando pode ser encarado como uma mistura do "git diff" com o "git log".
+git diff -- staged
 
-Como o "git diff" e o "git log"(juntamente com suas variações) são mostrados pelo terminal, muitas vezes a análise das mudanças nos arquivos através desses comandos torna-se pouco produtiva. Para resolver esse problema, também existe o comando "gitk", que da acesso à interface gráfica do Git. Com essa interface, pode-se analisar todas as mudanças nos arquivos de forma mais clara e objetiva.
+```
 
+Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar `git log`.
+
+```
+git log
+
+```
+
+Se, além dos commites, deseja-se saber quais foram as modificações exatas nos arquivos que estão no Git Directory, basta digitar `git log -p`. Esse comando pode ser encarado como uma mistura do `git diff` com o `git log`.
+```
+git log -p
+
+```
+
+Como o `git diff` e o `git log`(juntamente com suas variações) são mostrados pelo terminal, muitas vezes a análise das mudanças nos arquivos através desses comandos torna-se pouco produtiva. Para resolver esse problema, também existe o comando `gitk`, que da acesso à interface gráfica do Git. Com essa interface, pode-se analisar todas as mudanças nos arquivos de forma mais clara e objetiva.
+O `gitk`, quando ativado, impede que operações sejam feitas no terminal. Para resolver esse problema, basta usar o comando `gitk &` no lugar do `gitk`.
+
+```
+gitk
+
+gitk &
+
+```
 
 Após terminar o projeto, para enviar-lo ao github.com(site no qual outros membros da sua equipe podem ver suas modificações), basta, na página inicial do github.com, clicar em "new repository" e, após nomea-lo, enviar suas modificações através dos comandos
 
-git remote add origin URLdoProjeto
-git push -u origin master
+`git remote add origin`
+`git push -u origin master`
 
-*exemplo:*
+```
+
  git remote add origin h ttps://github.com/Fulano/projeto-.git
  git push -u origin master
 
+```
 
 ## Resumindo:
 
