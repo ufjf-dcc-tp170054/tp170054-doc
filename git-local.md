@@ -32,9 +32,9 @@ Um sistema de controle de versão funciona baseado em Estações de Trabalho e u
 
 O sistema baixado no site http://git-scm.com permite o uso dessa ferramenta através do terminal. Para iniciar o trabalho, abra o git bash(pode ser através do botão direito do mouse, procurando no seu sistema, etc...). Abrindo o git bash, haverá sempre o nome de usuário @ nome da sua máquina, seguido da localização.
 
- *exemplo:*
- fulano@beltrano1cak331 documentos/estudos/git
-
+ ```
+  fulano@beltrano1cak331 documentos/estudos/git
+```
 Para iniciar seu projeto com Git, é necessário primeiro entrar na pasta que você irá trabalhar. Para isso, digite
 
 cd nomeDaPasta
@@ -43,6 +43,11 @@ O git se encaminhará para a referida pasta.
 
 ### Criando Repositório Local.
 Através do comando `git init` é criado um repositório na pasta que esta sendo trabalhada para o git, dando inicio ao controle de versão. Essa criação de repositório pode ser confirmada com a pasta .git que aparecerá na localização onde foi digitado "git init".
+
+```
+git init
+
+```
 
 É interessante notar que, ao lado do "nome de usuário @ nome da sua máquina, seguido da localização" haverá um "(master)"
 
