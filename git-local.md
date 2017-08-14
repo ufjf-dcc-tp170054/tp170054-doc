@@ -46,7 +46,6 @@ Através do comando `git init` é criado um repositório na pasta que esta sendo
 
 ```
 git init
-
 ```
 
 É interessante notar que, ao lado do "nome de usuário @ nome da sua máquina, seguido da localização" haverá um "(master)"
@@ -63,14 +62,12 @@ Se a mudança for interessante e estiver sendo mostrada com a cor vermelha, bast
 
 ```
 git add nomeDaPasta
-
 ```
 
 Quando as modificações dos arquivos estiverem na Staging Area, so restará confirmar a entrada deles no Git Directory, ou seja, no repositório. Para isso, basta usar o comando `git commit -m `.
 
 ```
 git commit -m "Alguma modificação foi feita"
-
 ```
 
 
@@ -85,20 +82,17 @@ Caso seja interessante saber como estão as mudanças na Staging Area, basta dig
 git diff
 
 git diff -- staged
-
 ```
 
 Caso seja interessante saber quais foram os commites enviados ao repositório até o momento, basta digitar `git log`.
 
 ```
 git log
-
 ```
 
 Se, além dos commites, deseja-se saber quais foram as modificações exatas nos arquivos que estão no Git Directory, basta digitar `git log -p`. Esse comando pode ser encarado como uma mistura do `git diff` com o `git log`.
 ```
 git log -p
-
 ```
 
 Como o `git diff` e o `git log`(juntamente com suas variações) são mostrados pelo terminal, muitas vezes a análise das mudanças nos arquivos através desses comandos torna-se pouco produtiva. Para resolver esse problema, também existe o comando `gitk`, que da acesso à interface gráfica do Git. Com essa interface, pode-se analisar todas as mudanças nos arquivos de forma mais clara e objetiva.
@@ -108,7 +102,6 @@ O `gitk`, quando ativado, impede que operações sejam feitas no terminal. Para 
 gitk
 
 gitk &
-
 ```
 
 Após terminar o projeto, para enviar-lo ao github.com(site no qual outros membros da sua equipe podem ver suas modificações), basta, na página inicial do github.com, clicar em "new repository" e, após nomea-lo, enviar suas modificações através dos comandos
@@ -117,10 +110,8 @@ Após terminar o projeto, para enviar-lo ao github.com(site no qual outros membr
 `git push -u origin master`
 
 ```
-
  git remote add origin h ttps://github.com/Fulano/projeto-.git
  git push -u origin master
-
 ```
 
 ## Resumindo:
