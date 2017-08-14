@@ -24,7 +24,7 @@ git checkout -b nomeBranch
 ```
 ## Como mesclar dois branches
 
-O processo de união de dois branches é chamado de "merge". Com o fim das modificações nos branches e com a necessidade da união deles, basta usar o comando `git merge`, que une o branch especificado pelo comando ao branch apontado pelo "Head".
+O processo de união de dois branches é chamado de "merge". Com o fim das modificações nos branches e com a necessidade da união deles, basta usar o comando `git merge`para unir o branch especificado pelo comando ao branch apontado pelo "Head".
 ```
 git checkout master
 // aponta o Head para o branch master
