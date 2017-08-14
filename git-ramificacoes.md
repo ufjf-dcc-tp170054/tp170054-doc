@@ -8,6 +8,14 @@ Com a existência de vários branches em um mesmo projeto, vários deles podem s
 
 ## Como criar um branch
 
-
+Em termos técnicos, o branch trata-se de um ponteiro localizado em certa parte do projeto git. Através do comando `git branch`, cria-se um ponteiro no commit mais recente do projeto no git.
+```
+git branch nomeBranch
+```
+Com a criação do novo branch, para que o ponteiro "Head" aponte para ele é necessário usar o comando `git checkout`.
+```
+git checkout nomeBranch
+```
+Agora, as modificações feitas no projeto estarão no novo branch. 
 ## Como excluir um branch
 ## Como mesclar dois branches
