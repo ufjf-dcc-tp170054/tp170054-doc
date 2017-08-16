@@ -48,6 +48,9 @@ git pull neworigin
 ```
 
 # Trabalhando com ramificações remotas
+As ramificações remotas(ou branches remotos) são referências ao estado dos branches do projeto em diferentes repositórios remotos. São  marcadores de onde se encontram os branches do repositório remoto  desde a última vez em que este foi acessado, sendo identificados pelo nome padrão `nomeDoRemoto/nomeDoBranch`. Sempre que há alguma atualização em algum remoto, os branches remotos do dado repositório se movem automaticamente até o commit da modificação feita.
+
 ## Enviar uma ramificação local para um remoto
+Através do comando `git push (remoto) (branch)`, o branch cujo nome foi especificado é atualizado no repositório remoto especificado. 
 ## Obter uma ramificação remota para a cópia local
 ## Excluir uma ramificação remota
