@@ -26,4 +26,4 @@ O projeto teve início no ano de 2016 sob a orientação do professor Stênio S�
 * [Tutorial git (local)](git-local.md)
 * [Tutorial git (remoto)](git-remoto.md)
 * [Tutorial git (ramficações)](git-ramificacoes.md)
-* [Tutorial Android Studio](AndroidStudio.md)
+* [Android Studio(introdução e instalação)](AndroidStudio.md)
