@@ -4,4 +4,4 @@
 
 ##Instalando o Android Studio
 
-##Entendendo o ambiente de desenvolvimento 
+##Entendendo o ambiente de desenvolvimento
