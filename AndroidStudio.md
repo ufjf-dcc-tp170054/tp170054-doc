@@ -1,7 +1,7 @@
-#Android Studio
+# Android Studio
 
-##O que é o Android Studio e para que ele serve?
+## O que é o Android Studio e para que ele serve?
 
-##Instalando o Android Studio
+## Instalando o Android Studio
 
-##Entendendo o ambiente de desenvolvimento
+## Entendendo o ambiente de desenvolvimento
