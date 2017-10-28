@@ -27,3 +27,4 @@ O projeto teve início no ano de 2016 sob a orientação do professor Stênio S�
 * [Tutorial git (remoto)](git-remoto.md)
 * [Tutorial git (ramficações)](git-ramificacoes.md)
 * [Android Studio(introdução e instalação)](AndroidStudio.md)
+* [A ferramenta libGDX](libGDXtutorial.md)
